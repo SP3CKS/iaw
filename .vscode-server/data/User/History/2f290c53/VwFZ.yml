@@ -1,0 +1,37 @@
+version: '3'
+services:
+    equipo1:
+        #restart: on-failure
+        container_name: server1
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports: 
+            - "80:80"
+        networks: 
+            netasir:
+                ipv4_address: 172.128.10.2
+    equipo2:
+        #restart: on-failure
+        container_name: server2
+        build:
+            context: .
+            dockerfile: Dockerfile
+        networks: 
+            netasir:
+                ipv4_address: 172.128.10.3
+    equipo3:
+        #restart: on-failure
+        container_name: server3
+        build:
+            context: .
+            dockerfile: Dockerfile
+        networks: 
+            netasir:
+                ipv4_address: 172.128.10.4
+networks: 
+    netasir:
+        driver: bridge
+            ipam: 
+                config: 
+                    - subnet: 172.128.10.0/24

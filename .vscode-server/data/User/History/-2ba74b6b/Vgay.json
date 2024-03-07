@@ -1,0 +1,10 @@
+{
+    "window.menuBarVisibility": "compact",
+    "remote.SSH.remotePlatform": {
+        "192.168.8.147": "linux",
+        "192.168.8.187": "linux",
+        "192.168.8.146": "linux",
+        "192.168.8.172": "linux",
+        "192.168.18.180": "linux"
+    }
+}

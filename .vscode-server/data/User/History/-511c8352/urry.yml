@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  web:
+    container_name: nginx1
+    image: nginx
+    ports:
+      - "8080:80"
+    networks:
+      - net-test:
+        ipv4_address: 192.168.18.50
+  web2:
+    image: nginx
+    container_name: nginx2
+    ports:
+      - "8081:80"
+    networks:
+      - net-test:
+        ipv4_address: 192.168.18.40
+networks:
+  net-test:
+    ipam:
+      config:
+        - subnet: 192.168.18.0/24

@@ -1,0 +1,11 @@
+2024-03-05 13:26:28.624 [info] Extension host with pid 16125 started
+2024-03-05 13:26:28.759 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2024-03-05 13:26:28.843 [info] Lock '/home/aaron/.vscode-server/data/User/workspaceStorage/6b4afc9168a14c8980bb1b4101715e18/vscode.lock': Lock acquired.
+2024-03-05 13:26:28.857 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-03-05 13:26:29.254 [info] Eager extensions activated
+2024-03-05 13:26:29.268 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-03-05 13:26:29.269 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-03-05 13:26:29.971 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2024-03-05 13:26:37.504 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-03-05 13:27:20.906 [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-docker, startup: false, activationEvent: 'onLanguage:dockercompose'
+2024-03-05 13:27:48.120 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'

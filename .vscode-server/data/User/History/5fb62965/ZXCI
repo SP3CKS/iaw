@@ -1,0 +1,8 @@
+FROM nginx
+RUN apt-get update && apt-get install -yq --no-install-recommends \
+    apt-utils \
+    apache2 \
+    software-properties-common
+CMD apachectl -DFOREGROUND
+
+RUN echo "ServerName example.com" >> /etc/apache2/apache2.conf
